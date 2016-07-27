@@ -1,0 +1,990 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"error",
+				"error_log"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"u",
+				"udh_array"
+			],
+			[
+				"messa",
+				"messageChunks"
+			],
+			[
+				"get",
+				"getParameterByName"
+			],
+			[
+				"server",
+				"server_output"
+			],
+			[
+				"or",
+				"originator"
+			],
+			[
+				"api",
+				"api_id"
+			],
+			[
+				"subjc",
+				"subject"
+			],
+			[
+				"FIRM",
+				"FIRM_NAME"
+			],
+			[
+				"b",
+				"bolder"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"mu",
+				"multiplicand"
+			],
+			[
+				"mult",
+				"multiplier"
+			],
+			[
+				"botr",
+				"border-style"
+			],
+			[
+				"SM",
+				"SMTP_PORT"
+			],
+			[
+				"__DB",
+				"__DBUSERNAME__"
+			],
+			[
+				"log",
+				"logName"
+			],
+			[
+				"SMTP",
+				"SMTP_AUTHPASSWORD"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"FI",
+				"FIRMDOMAIN"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"item",
+				"itemPrice"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"isA",
+				"is_array"
+			],
+			[
+				"cons",
+				"constructInsert"
+			],
+			[
+				"s",
+				"s"
+			],
+			[
+				"picku",
+				"pickupdate"
+			],
+			[
+				"boo",
+				"bookingForm"
+			],
+			[
+				"emai",
+				"emailaddress"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"test",
+				"testArray"
+			],
+			[
+				"UNID",
+				"unid"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"php",
+				"php	<?php … ?>"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"firm",
+				"firmSMTPAuthUsername"
+			],
+			[
+				"SMTP_AU",
+				"SMTP_AUTHUSERNAME"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pr",
+				"product"
+			],
+			[
+				"prod",
+				"productCollection"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"a",
+				"arValues"
+			],
+			[
+				"sign",
+				"signupForm"
+			],
+			[
+				"si",
+				"signupForm"
+			],
+			[
+				"include",
+				"include_once"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "inc/header.php",
+			"settings":
+			{
+				"buffer_size": 1566,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_bookpanel.php",
+			"settings":
+			{
+				"buffer_size": 7746,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "inc/end_header.php",
+			"settings":
+			{
+				"buffer_size": 1037,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "  $(function() {\n\n	    $( \"#departDate\" ).datepicker({\n	      showOn: \"button\",\n	      buttonImage: \"img/calendar.gif\",\n	      buttonImageOnly: true,\n	      buttonText: \"\",\n	      minDate: 0, \n	      maxDate: \"+11M +10D\" \n	    });\n\n\n\n	  });\n\n\n		numeral.language('en', {\n		    delimiters: {\n		        thousands: ',',\n		        decimal: '.'\n		    },\n		    abbreviations: {\n		        thousand: 'k',\n		        million: 'm',\n		        billion: 'b',\n		        trillion: 't'\n		    },\n		    ordinal : function (number) {\n		        return number === 1 ? 'er' : 'ème';\n		    },\n		    currency: {\n		        symbol: '£'\n		    }\n		});\n		numeral.language('en');\n		$(\"#amountCredit\").html(numeral(80).format('$0,0.00'));\n\n\n\n   $('#bookingFormSubmit').on(\"click\",function(e){\n     e.preventDefault();\n     console.log(\"Submitting\");\n      console.log(\"WhoHa\");\n      $('.validation').removeClass('text-danger text-success');\n      $('.validation').addClass($('.has-error').length ? 'text-danger' : 'text-success');\n      $(\"a[id='bookingFormSubmit']\")\n      .html('<i class=\"fa fa-shopping-cart fa-3x\"></i> Please Wait...')\n        .attr('disabled', 'disabled');\n      return true;\n\n    $.post( \"testBook.php\", function( data ) {\n      consoloe.log( \"Data Loaded: \" + data );\n    });\n\n    });\n			",
+			"file": "inc/activate.js",
+			"file_size": 758,
+			"file_write_time": 131112624008372592,
+			"settings":
+			{
+				"buffer_size": 1280,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php\n    \\Stripe\\Stripe::setApiKey(STRIPE_LIVE_SECRET_KEY);\n    \\Stripe\\Stripe::setApiVersion(\"2015-09-08\");\n    $products = \\Stripe\\Product::all(array(\"limit\" => 30));\n    $t = $products->__toArray(true);\n    $format = \"\\t\\t\\t\\t\\t<option value=\\\"%s\\\">%s</option>\\n\";\n    $products =\"\\n\";\n    $total =  count($t[\"data\"]);\n    for ($i=0; $i < $total ; $i++) { \n      $products .= sprintf($format, $t[\"data\"][$i][\"id\"], $t[\"data\"][$i][\"name\"] );\n    }\n?>\n<div id=\"vd\"><?php //var_dump($person); ?></div>\n\n<section id=\"book\">\n  <div class=\"flora-wrap\">\n          <form id=\"bookingForm\" method=\"post\" action=\"functions/booking.php\" class=\"floraforms theme-black\">\n\n            <input name=\"pickupdate\" type=\"hidden\" value=\"<?php echo strtotime($person[\"pickupdate\"]); ?>\">\n            <input name=\"dropoffdate\" type=\"hidden\" value=\"<?php echo strtotime($person[\"dropoffdate\"]);?>\">\n            <input name=\"firstname\" type=\"hidden\" value=\"<?=$person[\"firstname\"]?>\">\n            <input name=\"lastname\" type=\"hidden\" value=\"<?=$person[\"lastname\"]?>\">\n            <input name=\"unid\" type=\"hidden\"  value=\"<?=$person[\"unid\"]?>\">\n            <input name=\"bookingTime\" type=\"hidden\" value=\"<?=$person[\"bookingTime\"]?>\">\n            <input name=\"orderID\" type=\"hidden\" value=\"<?=$person[\"orderID\"]?>\">\n\n              <div class=\"flora-container wrap1\">\n                  <div class=\"frm-header\">\n                      <span><h4><?=$firmName?> Order &nbsp;<span class=\"bk_amount\" id=\"bk_amount1\">£0.00</span>&nbsp;</h4>\n                        <a class=\"op book Bojo btn btn-themed\" data-btntext-sending=\"Processing...\" href=\"#\"><i class=\"fa fa-shopping-cart fa-3x\"></i> Book Order</a>\n                      </span>\n                      <h4><span class=\"orderID\"><?=$person[\"orderID\"]?></span></h4>\n                    </div><!-- end .frm-header section -->\n\n                    <div class=\"frm-body\">\n\n                        <div class=\"elem-group\"><!-- List of products -->            \n                            <label class=\"field flo-selectmulti\">\n                                <select size=\"10\" name=\"items\" id=\"laundryitems\" multiple=\"multiple\">\n                                  <?=$products?>\n                                </select>\n                            </label>\n                        </div><!-- end section -->\n\n                        <div class=\"frm-row\">\n                            <div class=\"elem-group colm colm3\">\n                                <label>Pickup Date</label>\n                                <label class=\"field\">\n                                    <input id=\"pickupdate\" type=\"date\" class=\"flo-input\" placeholder=\"PickUp Date\">\n                                </label>                            \n                            </div><!-- end .colm section section -->\n                            <div class=\"elem-group colm colm3\">\n                                <label>Pickup Time</label>\n                                <label class=\"field\">\n                                    <input id=\"pickuptime\" type=\"time\" class=\"flo-input\" placeholder=\"PickUp Time\">\n                                </label>                            \n                            </div><!-- end .colm section section -->\n                            <div class=\"elem-group colm colm3\">\n                                <label>Drop Date</label>\n                                <label class=\"field\">\n                                    <input id=\"dropoffdate\" type=\"date\" class=\"flo-input\" placeholder=\"DropOff Date\">\n                                </label>                            \n                            </div><!-- end .colm section section -->\n                            <div class=\"elem-group colm colm3\">\n                                <label>Drop Time</label>\n                                <label class=\"field\">\n                                    <input id=\"dropofftime\" type=\"time\" class=\"flo-input\" placeholder=\"DropOff Time\">\n                                </label>                            \n                            </div><!-- end .colm section section -->\n                        </div><!-- end .frm-row section -->\n\n                        <div class=\"frm-row\"><!-- Checkboxes -->\n                        \n                            <div class=\"elem-group colm colm3\">\n                                <label class=\"flo-switch block\">\n                                    <input type=\"checkbox\" name=\"xmode\" value=\"1\">\n                                    <span class=\"switch-label\" data-on=\"TEST\" data-off=\"LIVE\"></span>\n                                    <span class=\"tx switch-title\"> XMODE </span>\n                                </label>\n                                <label class=\"flo-switch block\">\n                                    <input type=\"checkbox\" name=\"finishOptions\" id=\"t1\" value=\"pressed\">\n                                    <span class=\"switch-label\" data-on=\"YES\" data-off=\"NO\"></span>\n                                    <span class=\"tx switch-title\"> Pressed </span>\n                                </label>                                \n                                <label class=\"flo-switch block\">\n                                    <input type=\"checkbox\" name=\"finishOptions\" id=\"t2\" value=\"folded\">\n                                    <span class=\"switch-label\" data-on=\"YES\" data-off=\"NO\"></span>\n                                    <span class=\"tx switch-title\"> Folded  </span>\n                                </label>\n                                <label class=\"flo-switch block\">\n                                    <input type=\"checkbox\" name=\"finishOptions\" id=\"t3\" value=\"hangars\">\n                                    <span class=\"switch-label\" data-on=\"YES\" data-off=\"NO\"></span>\n                                    <span class=\"tx switch-title\"> Hangars </span>\n                                </label>\n                                <label class=\"flo-switch block\">\n                                    <input type=\"checkbox\" name=\"finishOptions\" id=\"t4\" value=\"hudson\" checked>\n                                    <span class=\"switch-label\" data-on=\"YES\" data-off=\"NO\"></span>\n                                    <span class=\"tx switch-title\"> The Hudson </span>\n                                </label>\n                            </div><!-- end .colm section -->\n                            \n                            <div class=\"elem-group colm colm3\">\n                                <label class=\"flo-switch block\">\n                                    <input type=\"radio\" name=\"paymentType\" id=\"pt1\" value=\"cash\" checked>\n                                    <span class=\"switch-label\" data-on=\"YES\" data-off=\"NO\"></span>\n                                    <span class=\"ptx switch-title\"> Cash </span>\n                                </label>\n                                <label class=\"flo-switch block\">\n                                    <input type=\"radio\" name=\"paymentType\" id=\"pt2\" value=\"account\">\n                                    <span class=\"switch-label\" data-on=\"YES\" data-off=\"NO\"></span>\n                                    <span class=\"ptx switch-title\"> Account  </span>\n                                </label>\n                                <label class=\"flo-switch block\">\n                                    <input type=\"radio\" name=\"paymentType\" id=\"pt3\" value=\"plastic\">\n                                    <span class=\"switch-label\" data-on=\"YES\" data-off=\"NO\"></span>\n                                    <span class=\"ptx switch-title\">Credit/Debit</span>\n                                </label>\n                                <label class=\"flo-switch block\">\n                                    <input type=\"radio\" name=\"paymentType\" id=\"pt4\" value=\"voucher\">\n                                    <span class=\"switch-label\" data-on=\"YES\" data-off=\"NO\"></span>\n                                    <span class=\"ptx switch-title\"> Voucher </span>\n                                </label>\n                            </div><!-- end .colm section -->\n\n                            <div class=\"elem-group colm colm6\">\n                                <div id=\"log\"></div>\n                            </div><!-- end .colm section -->\n\n                        </div><!-- end .frm-row section -->\n\n                        <div class=\"frm-row\"><!-- Customer Details -->\n                            <div class=\"elem-group colm colm4\">\n                                <label class=\"field\">\n                                    <input id=\"customerName\" type=\"text\" class=\"flo-input\" placeholder=\"Name\">\n                                </label>                            \n                            </div><!-- end .colm section section -->\n                            <div class=\"elem-group colm colm4\">\n                                <label class=\"field\">\n                                    <input name=\"emailaddress\" type=\"search\" class=\"flo-input\" placeholder=\"Email\" value=\"<?=$person[\"emailaddress\"]?>\">\n                                </label>                            \n                            </div><!-- end .colm section section -->\n                            <div class=\"elem-group colm colm4\">\n                                <label class=\"field\">\n                                    <input name=\"telephone\" type=\"search\" class=\"flo-input\" placeholder=\"Telephone\" value=\"<?=$person[\"telephone\"]?>\">\n                                </label>                            \n                            </div><!-- end .colm section section --><!--  -->\n                        </div><!-- end .frm-row section -->\n                        \n                        <div class=\"elem-group\"><!-- Messages -->\n                            <label class=\"field\">\n                                <textarea class=\"bigger flo-textarea\" id=\"comment\" name=\"message\" placeholder=\"Enter comment\"><?=$person[\"firstname\"]?></textarea>\n                                <span class=\"flo-hint\"><strong>Hint:</strong> Enter any special / additional instructions here</span>   \n                            </label>\n                        </div><!-- end .elem-group section --> \n                     \n                    </div><!-- end .frm-body section -->\n\n                    <div class=\"frm-footer\">\n                      <button type=\"reset\" class=\"flo-button\">Cancel</button>\n                       <a id=\"bojo\" class=\"Bojo op book btn btn-themed\" data-btntext-sending=\"Processing...\" href=\"#\"><i class=\"fa fa-shopping-cart fa-3x\"></i> Book Order</a>\n                        <button type=\"submit\" class=\"flo-button btn-themed\">Submit Form</button>\n                    </div><!-- end .frm-footer section -->\n                </div><!-- end .flora-container section -->\n            </form>\n\n            <?php //include \"ccform.php\"; ?>\n\n        </div><!-- end .flora-wrap section -->\n        <div></div><!-- end section -->\n</section>\n",
+			"file": "/C/xampp/htdocs/clients/hudsonbrompton/section_book.php",
+			"file_size": 11113,
+			"file_write_time": 130889183910000000,
+			"settings":
+			{
+				"buffer_size": 10944,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/clients/hudsonbrompton/js/bookingFormListener.js",
+			"settings":
+			{
+				"buffer_size": 3971,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "        <div id=\"page-wrapper\">\n            <div class=\"row\">\n                <div class=\"col-lg-12\">\n                    <h1 class=\"page-header\">Forms</h1>\n                </div>\n                <!-- /.col-lg-12 -->\n            </div>\n            <!-- /.row -->\n            <div class=\"row\">\n                <div class=\"col-lg-12\">\n                    <div class=\"panel panel-default\">\n                        <div class=\"panel-heading\">\n                            Basic Form Elements\n                        </div>\n                        <div class=\"panel-body\">\n                            <div class=\"row\">\n                                <div class=\"col-lg-6\">\n                                    <form role=\"form\">\n                                        <div class=\"form-group\">\n                                            <label>Text Input</label>\n                                            <input class=\"form-control\">\n                                            <p class=\"help-block\">Example block-level help text here.</p>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Text Input with Placeholder</label>\n                                            <input class=\"form-control\" placeholder=\"Enter text\">\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Static Control</label>\n                                            <p class=\"form-control-static\">email@example.com</p>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>File input</label>\n                                            <input type=\"file\">\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Text area</label>\n                                            <textarea class=\"form-control\" rows=\"3\"></textarea>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Checkboxes</label>\n                                            <div class=\"checkbox\">\n                                                <label>\n                                                    <input type=\"checkbox\" value=\"\">Checkbox 1\n                                                </label>\n                                            </div>\n                                            <div class=\"checkbox\">\n                                                <label>\n                                                    <input type=\"checkbox\" value=\"\">Checkbox 2\n                                                </label>\n                                            </div>\n                                            <div class=\"checkbox\">\n                                                <label>\n                                                    <input type=\"checkbox\" value=\"\">Checkbox 3\n                                                </label>\n                                            </div>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Inline Checkboxes</label>\n                                            <label class=\"checkbox-inline\">\n                                                <input type=\"checkbox\">1\n                                            </label>\n                                            <label class=\"checkbox-inline\">\n                                                <input type=\"checkbox\">2\n                                            </label>\n                                            <label class=\"checkbox-inline\">\n                                                <input type=\"checkbox\">3\n                                            </label>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Radio Buttons</label>\n                                            <div class=\"radio\">\n                                                <label>\n                                                    <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios1\" value=\"option1\" checked>Radio 1\n                                                </label>\n                                            </div>\n                                            <div class=\"radio\">\n                                                <label>\n                                                    <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios2\" value=\"option2\">Radio 2\n                                                </label>\n                                            </div>\n                                            <div class=\"radio\">\n                                                <label>\n                                                    <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios3\" value=\"option3\">Radio 3\n                                                </label>\n                                            </div>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Inline Radio Buttons</label>\n                                            <label class=\"radio-inline\">\n                                                <input type=\"radio\" name=\"optionsRadiosInline\" id=\"optionsRadiosInline1\" value=\"option1\" checked>1\n                                            </label>\n                                            <label class=\"radio-inline\">\n                                                <input type=\"radio\" name=\"optionsRadiosInline\" id=\"optionsRadiosInline2\" value=\"option2\">2\n                                            </label>\n                                            <label class=\"radio-inline\">\n                                                <input type=\"radio\" name=\"optionsRadiosInline\" id=\"optionsRadiosInline3\" value=\"option3\">3\n                                            </label>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Selects</label>\n                                            <select class=\"form-control\">\n                                                <option>1</option>\n                                                <option>2</option>\n                                                <option>3</option>\n                                                <option>4</option>\n                                                <option>5</option>\n                                            </select>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <label>Multiple Selects</label>\n                                            <select multiple class=\"form-control\">\n                                                <option>1</option>\n                                                <option>2</option>\n                                                <option>3</option>\n                                                <option>4</option>\n                                                <option>5</option>\n                                            </select>\n                                        </div>\n                                        <button type=\"submit\" class=\"btn btn-default\">Submit Button</button>\n                                        <button type=\"reset\" class=\"btn btn-default\">Reset Button</button>\n                                    </form>\n                                </div>\n                                <!-- /.col-lg-6 (nested) -->\n                                <div class=\"col-lg-6\">\n                                    <h1>Disabled Form States</h1>\n                                    <form role=\"form\">\n                                        <fieldset disabled>\n                                            <div class=\"form-group\">\n                                                <label for=\"disabledSelect\">Disabled input</label>\n                                                <input class=\"form-control\" id=\"disabledInput\" type=\"text\" placeholder=\"Disabled input\" disabled>\n                                            </div>\n                                            <div class=\"form-group\">\n                                                <label for=\"disabledSelect\">Disabled select menu</label>\n                                                <select id=\"disabledSelect\" class=\"form-control\">\n                                                    <option>Disabled select</option>\n                                                </select>\n                                            </div>\n                                            <div class=\"checkbox\">\n                                                <label>\n                                                    <input type=\"checkbox\">Disabled Checkbox\n                                                </label>\n                                            </div>\n                                            <button type=\"submit\" class=\"btn btn-primary\">Disabled Button</button>\n                                        </fieldset>\n                                    </form>\n                                    <h1>Form Validation States</h1>\n                                    <form role=\"form\">\n                                        <div class=\"form-group has-success\">\n                                            <label class=\"control-label\" for=\"inputSuccess\">Input with success</label>\n                                            <input type=\"text\" class=\"form-control\" id=\"inputSuccess\">\n                                        </div>\n                                        <div class=\"form-group has-warning\">\n                                            <label class=\"control-label\" for=\"inputWarning\">Input with warning</label>\n                                            <input type=\"text\" class=\"form-control\" id=\"inputWarning\">\n                                        </div>\n                                        <div class=\"form-group has-error\">\n                                            <label class=\"control-label\" for=\"inputError\">Input with error</label>\n                                            <input type=\"text\" class=\"form-control\" id=\"inputError\">\n                                        </div>\n                                    </form>\n                                    <h1>Input Groups</h1>\n                                    <form role=\"form\">\n                                        <div class=\"form-group input-group\">\n                                            <span class=\"input-group-addon\">@</span>\n                                            <input type=\"text\" class=\"form-control\" placeholder=\"Username\">\n                                        </div>\n                                        <div class=\"form-group input-group\">\n                                            <input type=\"text\" class=\"form-control\">\n                                            <span class=\"input-group-addon\">.00</span>\n                                        </div>\n                                        <div class=\"form-group input-group\">\n                                            <span class=\"input-group-addon\"><i class=\"fa fa-eur\"></i>\n                                            </span>\n                                            <input type=\"text\" class=\"form-control\" placeholder=\"Font Awesome Icon\">\n                                        </div>\n                                        <div class=\"form-group input-group\">\n                                            <span class=\"input-group-addon\">$</span>\n                                            <input type=\"text\" class=\"form-control\">\n                                            <span class=\"input-group-addon\">.00</span>\n                                        </div>\n                                        <div class=\"form-group input-group\">\n                                            <input type=\"text\" class=\"form-control\">\n                                            <span class=\"input-group-btn\">\n                                                <button class=\"btn btn-default\" type=\"button\"><i class=\"fa fa-search\"></i>\n                                                </button>\n                                            </span>\n                                        </div>\n                                    </form>\n                                </div>\n                                <!-- /.col-lg-6 (nested) -->\n                            </div>\n                            <!-- /.row (nested) -->\n                        </div>\n                        <!-- /.panel-body -->\n                    </div>\n                    <!-- /.panel -->\n                </div>\n                <!-- /.col-lg-12 -->\n            </div>\n            <!-- /.row -->\n        </div>\n        <!-- /#page-wrapper -->",
+			"settings":
+			{
+				"buffer_size": 13429,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/clients/alpha/nf4",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/startbootstrap-sb-admin-2-1.0.8",
+		"/C/xampp/htdocs/clients/alpha/nf4/js"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/clients/alpha/nf4/datetimepicker/index.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/booking.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/class.user.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/profile.php",
+		"/C/xampp/htdocs/clients/alpha/nealesdrt/__config.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/appconfig.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/home.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/session.php",
+		"/C/xampp/htdocs/clients/alpha/nealesdrt/book.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/dbconfig.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/index.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/register.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/121.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/122.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/123.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/webpath.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/tbook.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/book/login.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/dblogin.sql",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/sign-up.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/book/login_anim.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/plar/passwordHash.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/plar/Class.User.Php",
+		"/C/xampp/htdocs/clients/alpha/nf2/plar/index.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/plar/sign-up.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/plar/home.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/plar/css/style.css",
+		"/C/xampp/htdocs/clients/alpha/nf2/crud/includes/config.php",
+		"/C/Users/ericmasaba/OneDrive/Partners/Mamaer Digital/Clients/Neales/mess/sql_table.sql",
+		"/C/xampp/htdocs/clients/alpha/nf2/crud/delete.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/book/config.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/book/includes/login.inc.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/book/index.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/book/logout.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/book/css/signin02.css",
+		"/C/xampp/htdocs/clients/alpha/nf2/book/css/signin01.css",
+		"/C/xampp/htdocs/clients/alpha/nf2/book/css/signin03.css",
+		"/C/xampp/htdocs/clients/alpha/nf2/crud/update.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/crud/add.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/crud/index.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/crud/pagination.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/crud/data.inc.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/crud/config.php",
+		"/C/xampp/phpMyAdmin/webapp.php",
+		"/C/xampp/phpMyAdmin/config.inc.php",
+		"/C/xampp/phpMyAdmin/db_create.php",
+		"/C/xampp/phpMyAdmin/config.sample.inc.php",
+		"/C/Users/ericmasaba/OneDrive/Partners/Mamaer Digital/Clients/Neales/Uber/Uber-shared/uberx.sql",
+		"/C/xampp/htdocs/clients/alpha/nf2/login/config.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/login/profile.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/login/logout.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/login/session.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/login/login.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/login/index.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/login/style.css",
+		"/Y/www/sandbox/videoImage.php",
+		"/Y/www/sandbox/styleBoing.css",
+		"/Y/www/sandbox/curlGet.php",
+		"/Y/www/sandbox/insertable.php",
+		"/Y/www/sandbox/getResidents.php",
+		"/C/xampp/htdocs/dev/sofaworks/app/webroot/js/vendors/backbone/.npmignore",
+		"/C/xampp/htdocs/dev/sofaworks/app/webroot/js/vendors/backbone/.gitignore",
+		"/C/xampp/htdocs/dev/sofaworks/app/webroot/js/vendors/backbone/package.json",
+		"/C/xampp/htdocs/dev/sofaworks/app/webroot/js/vendors/backbone/.travis.yml",
+		"/C/xampp/htdocs/dev/sofaworks/app/Model/AppModel.php",
+		"/Y/www/sandbox/drl_url.php",
+		"/C/xampp/htdocs/dev/sofaworks/app/.htaccess",
+		"/Y/www/pres/web/viewer.js",
+		"/Y/www/ericmasaba/validInclude.html",
+		"/Y/www/ericmasaba/login.php",
+		"/Y/www/ericmasaba/base.php",
+		"/Y/www/sandbox/yturl.php",
+		"/Y/www/51house/page-tree/pt.php",
+		"/Y/www/51house/UserPress_Updater.php",
+		"/Y/www/51house/loader.php",
+		"/Y/www/ericmasaba/endInclude.php",
+		"/Y/www/ericmasaba/js/postcodes.min.js",
+		"/Y/www/ericmasaba/js/neales-the-basics.js",
+		"/Y/www/ericmasaba/css/style-responsive.css",
+		"/Y/www/ericmasaba/css/style.css",
+		"/Y/www/ericmasaba/css/style(2).css",
+		"/Y/www/ericmasaba/style.css",
+		"/Y/www/ericmasaba/error_log",
+		"/C/xampp/htdocs/clients/alpha/govuk_elements/formvalidation/src/js/base.js",
+		"/C/xampp/htdocs/clients/alpha/govuk_elements/formvalidation/src/js/helper.js",
+		"/C/xampp/htdocs/clients/alpha/govuk_elements/formvalidation/src/js/framework/bootstrap.js",
+		"/C/xampp/htdocs/clients/alpha/neales/demo/login/tp/validInclude.html",
+		"/Y/www/ericmasaba/css/style (2).css",
+		"/C/xampp/htdocs/clients/alpha/neales/demo/login/tp/base.php",
+		"/Y/www/clients/neales/app/config/mail.php",
+		"/Y/www/clients/neales/app/config/services.php",
+		"/Y/www/clients/neales/app/config/mail_temp.php",
+		"/Y/www/clients/neales/app/config/mailpleb.php",
+		"/Y/www/clients/neales/app/config/testing/database.php",
+		"/Y/www/clients/neales/bootstrap/paths.php",
+		"/C/xampp/htdocs/clone/uber/neales/bootstrap/autoload.php",
+		"/Y/www/uber/neales/app/config/mail.php",
+		"/Y/www/uber/neales/app/config/database.php",
+		"/Y/www/uber/neales/app/config/queue.php",
+		"/Y/www/uber/neales/app/config/app.php",
+		"/C/xampp/htdocs/learn/07/ab1.html",
+		"/C/xampp/htdocs/clone/uber/neales/.htaccess",
+		"/C/xampp/htdocs/clone/uber/neales/app/controllers/WalkerController.php",
+		"/C/xampp/htdocs/clone/uber/neales/app/config/app.php",
+		"/C/xampp/htdocs/clone/uber/neales/index.php",
+		"/C/xampp/htdocs/taxinow/Uber/htaccess/.htaccess",
+		"/C/xampp/htdocs/taxinow/taxi/app/config/app.php",
+		"/C/xampp/htdocs/taxinow/taxi/app/routes.php",
+		"/C/xampp/htdocs/taxinow/taxi/bootstrap/paths.php",
+		"/C/xampp/htdocs/taxinow/taxi/app/controllers/OwnerController.php",
+		"/C/xampp/htdocs/taxinow/taxi/app/controllers/BaseController.php",
+		"/C/xampp/htdocs/taxinow/taxi/app/controllers/AdminController.php",
+		"/C/xampp/htdocs/taxinow/taxi/bootstrap/autoload.php",
+		"/C/Users/ericmasaba/OneDrive/Partners/GVSDRT/Passwords.rtf",
+		"/C/xampp/htdocs/clients/lazaridis/description.html",
+		"/C/xampp/htdocs/clients/lazaridis/index.html",
+		"/C/xampp/htdocs/clients/lazaridis/od.html",
+		"/C/xampp/htdocs/clients/lazaridis/map2.html",
+		"/C/xampp/htdocs/clients/lazaridis/illustration.html",
+		"/C/xampp/htdocs/clients/lazaridis/css/flights.css",
+		"/C/xampp/htdocs/clients/lazaridis/js/flightanimation.js",
+		"/C/xampp/htdocs/clients/lazaridis/js/d3.v3.min.js",
+		"/C/xampp/htdocs/clients/lazaridis/poverty_rate.csv",
+		"/C/xampp/htdocs/clients/lazaridis/css/usFlights.css",
+		"/C/xampp/htdocs/clients/lazaridis/js/usFlights.js",
+		"/C/xampp/htdocs/clients/lazaridis/js/euStat1.js",
+		"/C/xampp/htdocs/clients/lazaridis/js/euStat.js",
+		"/C/xampp/htdocs/clients/lazaridis/css/euStat.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\clients\\alpha\\nf2\\pdoop",
+			"<open folders>",
+			"",
+			"y:\\www\\_sites\\51house",
+			"C:\\xampp\\htdocs\\clients\\chenling\\",
+			"Y:\\www\\_sites\\chenling",
+			"Y:\\www\\_sites\\hudsonbrompton\\css",
+			"Y:\\www\\_sites\\",
+			"Y:\\www\\_sites\\hudsonbrompton\\",
+			"Y:\\www\\_sites\\hudsonbrompton\\js",
+			"Y:\\www\\_sites\\hudsonbrompton\\css",
+			"Y:\\www\\_sites\\hudsonbrompton\\js",
+			"Y:\\www\\_sites\\hudsonbrompton",
+			"Y:\\www\\_sites\\gvsdrt\\payment",
+			"payment",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"basic form",
+			"css",
+			"js",
+			".min.",
+			"departdate",
+			"date",
+			"coding",
+			"lo in to",
+			"users",
+			"bourb",
+			"signin.css",
+			"jquery",
+			"DEFAULT_URL",
+			"1.pdf",
+			"an error",
+			"orig",
+			"or",
+			"fileorigin",
+			"compressed.tracemonkey-pldi-09.pdf",
+			"var kDefaultURL = 'compressed.tracemonkey-pldi-09.pdf';",
+			"fileOrigin",
+			"Origin",
+			"origin",
+			"index",
+			"json",
+			"rnr",
+			"font-awesome",
+			"font",
+			"php inc",
+			"http",
+			"!empty($_POST['password']",
+			"sessionTQP",
+			"tqp",
+			"<section",
+			"</sec",
+			"section",
+			"../includes",
+			"http://",
+			"illustr",
+			"flight",
+			"flightan",
+			"blog",
+			"invoice",
+			"portf",
+			"port",
+			"json",
+			"\"/js",
+			"//d3js.org",
+			"bostock",
+			"pover",
+			"http://d3js.org",
+			".js",
+			"disr",
+			"airport transfers",
+			"primaltrainingclub",
+			"url",
+			"AIza",
+			"acc",
+			"timepicker",
+			"http://www.texxi.com/neales/demo/",
+			"clickatell",
+			"Welcome to Neales",
+			"title",
+			"neales06",
+			"SMTP_A",
+			"using ",
+			"using em",
+			"06.h",
+			"SMTP_PORT",
+			"SMTP",
+			"FIRM_NAME",
+			"FIRM__NAME",
+			"$db",
+			"$dbname",
+			"$dbna",
+			"abrar",
+			"connect",
+			"description",
+			"manage acc",
+			"Neales F",
+			"buy a ",
+			"font-family",
+			"font",
+			"taxi is",
+			"img",
+			"begin",
+			"      <script src=\"assets/js/nealesdest01.js\"></script>",
+			"easyjet-",
+			"jque",
+			"?rev=tmp1459354847879",
+			"body",
+			"/head",
+			"head",
+			"url",
+			"import",
+			"url",
+			"/m2p-ej/static/m2p-ej/mweb/",
+			"/m2p-ej/static/m2p-ej/mweb/css/",
+			"/m2p-ej/static/m2p-ej/mweb/js/",
+			"/m2p-ej/static/m2core/webkit/",
+			"/m2p-ej/static/m2p-ej/mweb/js/",
+			"subscribe",
+			"contact_me.php",
+			"mail_",
+			"agent",
+			"test_u",
+			"sendButton",
+			"automated",
+			"FIRM_EMAIL_BOOKING",
+			"fontawesome",
+			"\"js/",
+			"css",
+			"js/",
+			"\\\"js/",
+			"\"js/",
+			"subsc",
+			"$contact",
+			"contact",
+			"cont",
+			"become dili",
+			"Contact",
+			"C0ntact",
+			"where",
+			"who",
+			"where",
+			"FIRMDOMAIN",
+			"151329",
+			"015132"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"logins",
+			"css",
+			"//",
+			"\"js",
+			"js",
+			"prorealfitness",
+			"",
+			"assets/",
+			"assets/css/",
+			"assets/",
+			"assets/js/",
+			"mc-embedded-subscribe",
+			"\"assets/js/",
+			"FIRM_DOMAIN",
+			"",
+			"g\\n",
+			"/~/",
+			"\\n&quot;/~/",
+			"</A><BR>",
+			"assets/img/media/",
+			"media/images",
+			"",
+			"/offer/",
+			"assets/img/media/",
+			"/homepage/",
+			"chenling",
+			"/offer/",
+			"assets/img/media/homepage",
+			"../fonts",
+			"'../assets",
+			"'./assets",
+			"assets",
+			"www.nambuya.co.uk",
+			"https://fonts",
+			"",
+			"'",
+			"name=\"character\"",
+			"checkbox",
+			"",
+			"options",
+			"finish",
+			"description",
+			"options",
+			"source",
+			"items",
+			"name=\"finishOptions\"",
+			"domains",
+			"arbitraryData",
+			"$person",
+			"person",
+			"contactForm",
+			"\\\\\"",
+			"\\\"",
+			"'",
+			"\"finish\"",
+			"\\\"pt$1",
+			"\\\"pt%1",
+			"paymentType",
+			"\",\"",
+			",",
+			"$customerMessage",
+			"$randomDatum",
+			"$randomDatum[",
+			"$randomTuple",
+			"id=\"con-",
+			"",
+			"inc",
+			"<?=$firmName?>",
+			"img",
+			"#wrapper",
+			"#register",
+			"https://www.texxi.com/_sites/gvsdrt/img/",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\xampp\\htdocs\\clients\\alpha\\nf4"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "inc/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								776,
+								776
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_bookpanel.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								443,
+								443
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "inc/end_header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1037,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								889,
+								827
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "inc/activate.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								338,
+								338
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 141.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/xampp/htdocs/clients/hudsonbrompton/section_book.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1025,
+								1025
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 574.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/xampp/htdocs/clients/hudsonbrompton/js/bookingFormListener.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3971,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3322,
+								2753
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 756.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

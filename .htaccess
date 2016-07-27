@@ -1,0 +1,24 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+ErrorDocument 400 /clients/alpha/nf6/error400.php
+ErrorDocument 401 /clients/alpha/nf6/error401.php
+ErrorDocument 402 /clients/alpha/nf6/error402.php
+ErrorDocument 403 /clients/alpha/nf6/error403.php
+ErrorDocument 404 /clients/alpha/nf6/error404.php
+
+RewriteRule ^book/(.*)$ booking.php [R=301,NC,L]
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} /(.*)/$
+RewriteRule ^ /%1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(mamaer\.co\.uk/clients/neales)(:80)? [NC]
+RewriteRule ^(.*) http://www.mamaer.co.uk/clients/neales/$1 [R=301,L]
+DirectoryIndex index.php     
+order deny,allow
+
+
