@@ -1,0 +1,1090 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"user",
+				"userRow"
+			],
+			[
+				"butto",
+				"buttonName"
+			],
+			[
+				"butt",
+				"buttonName"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"error",
+				"error_log"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"u",
+				"udh_array"
+			],
+			[
+				"messa",
+				"messageChunks"
+			],
+			[
+				"get",
+				"getParameterByName"
+			],
+			[
+				"server",
+				"server_output"
+			],
+			[
+				"or",
+				"originator"
+			],
+			[
+				"api",
+				"api_id"
+			],
+			[
+				"subjc",
+				"subject"
+			],
+			[
+				"FIRM",
+				"FIRM_NAME"
+			],
+			[
+				"b",
+				"bolder"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"mu",
+				"multiplicand"
+			],
+			[
+				"mult",
+				"multiplier"
+			],
+			[
+				"botr",
+				"border-style"
+			],
+			[
+				"SM",
+				"SMTP_PORT"
+			],
+			[
+				"__DB",
+				"__DBUSERNAME__"
+			],
+			[
+				"log",
+				"logName"
+			],
+			[
+				"SMTP",
+				"SMTP_AUTHPASSWORD"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"FI",
+				"FIRMDOMAIN"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"item",
+				"itemPrice"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"isA",
+				"is_array"
+			],
+			[
+				"cons",
+				"constructInsert"
+			],
+			[
+				"s",
+				"s"
+			],
+			[
+				"picku",
+				"pickupdate"
+			],
+			[
+				"boo",
+				"bookingForm"
+			],
+			[
+				"emai",
+				"emailaddress"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"test",
+				"testArray"
+			],
+			[
+				"UNID",
+				"unid"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"php",
+				"php	<?php … ?>"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"firm",
+				"firmSMTPAuthUsername"
+			],
+			[
+				"SMTP_AU",
+				"SMTP_AUTHUSERNAME"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pr",
+				"product"
+			],
+			[
+				"prod",
+				"productCollection"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"a",
+				"arValues"
+			],
+			[
+				"sign",
+				"signupForm"
+			],
+			[
+				"si",
+				"signupForm"
+			],
+			[
+				"include",
+				"include_once"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_index.php",
+			"settings":
+			{
+				"buffer_size": 2848,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/mapMake.js",
+			"settings":
+			{
+				"buffer_size": 7699,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "book.php",
+			"settings":
+			{
+				"buffer_size": 5874,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 563 files for \"latlng\"\n\nC:\\xampp\\htdocs\\clients\\alpha\\nf4\\assets\\js\\script.js:\n  104                  /* 6 – 8 Corporation Street,High Wycombe, BUCKS, HP13 2TQ, UK   */\n  105  \n  106:                 center: new google.maps.LatLng(51.629147, -0.749312), // New York\n  107  \n  108                  // How you would like to style the map. \n  ...\n  200              // Create the Google Map using out element and options defined above\n  201              var map = new google.maps.Map(mapElement, mapOptions);\n  202:             var myLatlng = new google.maps.LatLng(51.629147, -0.749312);\n  203:             var nealesLatlng = new google.maps.LatLng(51.829147, -0.749312);            \n  204              var image = {\n  205                  url: 'img/map_pin.png',\n  ...\n  213  \n  214              var marker = new google.maps.Marker({\n  215:                 position: myLatlng,\n  216                  icon: image,\n  217                  map: map,\n  ...\n  220  \n  221              var marker2 = new google.maps.Marker({\n  222:                 position: nealesLatlng,\n  223                  icon: image,\n  224                  map: map,\n\nC:\\xampp\\htdocs\\clients\\alpha\\nf4\\assets\\js\\scripts.js:\n  114                  /* Smallbrook Stadium, Ryde, Isle of Wight, UK 50.709433, -1.163677  */\n  115  \n  116:                 center: new google.maps.LatLng(51.629147, -0.749312), // New York\n  117  \n  118                  // How you would like to style the map. \n  ...\n  210              // Create the Google Map using out element and options defined above\n  211              var map = new google.maps.Map(mapElement, mapOptions);\n  212:             var myLatlng = new google.maps.LatLng(51.629147, -0.749312);\n  213              var image = {\n  214                  url: 'img/map_pin.png',\n  ...\n  222  \n  223              var marker = new google.maps.Marker({\n  224:                 position: myLatlng,\n  225                  icon: image,\n  226                  map: map,\n\nC:\\xampp\\htdocs\\clients\\alpha\\nf4\\js\\abrarkdmap1.js:\n   21    if(navigator.geolocation) {\n   22      navigator.geolocation.getCurrentPosition(function(position) {\n   23:       var pos = new google.maps.LatLng(position.coords.latitude,\n   24                                         position.coords.longitude);\n   25  \n   ..\n   49    var options = {\n   50      map: map,\n   51:     position: new google.maps.LatLng(60, 105),\n   52      content: content\n   53    };\n\nC:\\xampp\\htdocs\\clients\\alpha\\nf4\\js\\initialise.js:\n  120  \n  121                  // The latitude and longitude to center the map (always required)\n  122:                 center: new google.maps.LatLng(53.485128, -3.035419), // Rossett Road, Crosby\n  123  \n  124                  // How you would like to style the map. \n  ...\n  250              // Create the Google Map using out element and options defined above\n  251              var map = new google.maps.Map(mapElement, mapOptions);\n  252:             var myLatlng = new google.maps.LatLng(53.485128, -3.035419);\n  253              var image = {\n  254                  url: '../img/map_pin.png',\n  ...\n  262  \n  263              var marker = new google.maps.Marker({\n  264:                 position: myLatlng,\n  265                  icon: image,\n  266                  map: map,\n\nC:\\xampp\\htdocs\\clients\\alpha\\nf4\\js\\mapGeoloc.js:\n   64                if(navigator.geolocation) {\n   65                  navigator.geolocation.getCurrentPosition(function(position) {\n   66:                   var pos = new google.maps.LatLng(position.coords.latitude,\n   67                                                     position.coords.longitude);\n   68  \n   ..\n  114              var options = {\n  115                map: map,\n  116:               position: new google.maps.LatLng(51.6290494864026,-0.749108865905153),\n  117                content: content\n  118              };\n  ...\n  122              }\n  123  \n  124:             function placeMarkerAndPanTo(latLng, map) {\n  125                var marker = new google.maps.Marker({\n  126:                 position: latLng,\n  127                  map: map\n  128                });\n  129:               map.panTo(latLng);\n  130              }\n  131  \n\nC:\\xampp\\htdocs\\clients\\alpha\\nf4\\js\\mapMake.js:\n   27  \n   28                          // The latitude and longitude to center the map (always required)\n   29:                         center: new google.maps.LatLng(53.485128, -3.035419), // Rossett Road, Crosby\n   30  \n   31                          // How you would like to style the map. \n   ..\n  157                      // Create the Google Map using out element and options defined above\n  158                      var map = new google.maps.Map(mapElement, mapOptions);\n  159:                     var myLatlng = new google.maps.LatLng(53.485128, -3.035419);\n  160                      var image = {\n  161                          url: './img/map_pin.png',\n  ...\n  169  \n  170                      var marker = new google.maps.Marker({\n  171:                         position: myLatlng,\n  172                          icon: image,\n  173                          map: map,\n\nC:\\xampp\\htdocs\\clients\\alpha\\nf4\\js\\script.js:\n   77  \n   78                          // The latitude and longitude to center the map (always required)\n   79:                         center: new google.maps.LatLng(53.485128, -3.035419), // Rossett Road, Crosby\n   80  \n   81                          // How you would like to style the map. \n   ..\n  207                      // Create the Google Map using out element and options defined above\n  208                      var map = new google.maps.Map(mapElement, mapOptions);\n  209:                     var myLatlng = new google.maps.LatLng(53.485128, -3.035419);\n  210                      var image = {\n  211                          url: './img/map_pin.png',\n  ...\n  219  \n  220                      var marker = new google.maps.Marker({\n  221:                         position: myLatlng,\n  222                          icon: image,\n  223                          map: map,\n\nC:\\xampp\\htdocs\\clients\\alpha\\nf4\\track\\abkd3.js:\n   22    if(navigator.geolocation) {\n   23      navigator.geolocation.getCurrentPosition(function(position) {\n   24:       var pos = new google.maps.LatLng(position.coords.latitude,\n   25                                         position.coords.longitude);\n   26        user_lat = pos['D'];\n   ..\n   69    var options = {\n   70      map: map,\n   71:     position: new google.maps.LatLng(60, 105),\n   72      content: content\n   73    };\n\n32 matches across 8 files\n",
+			"settings":
+			{
+				"buffer_size": 6559,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "js/book5listeners.js",
+			"settings":
+			{
+				"buffer_size": 1681,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"last_filter": "Snippet: ",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"e",
+				"Set Syntax: Erlang"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/clients/alpha/nf4",
+		"/C/xampp/htdocs/clients/alpha/nf4/assets/js",
+		"/C/xampp/htdocs/clients/alpha/nf4/js"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/clients/alpha/nf4/zones.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/_home.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/hk/tellCustomers.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/assets/json/customers.json",
+		"/C/xampp/htdocs/clients/alpha/nf4/logout.php",
+		"/C/xampp/htdocs/clients/alpha/nf5/_index.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/_indexOld.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/signout.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/js/book5listeners.js",
+		"/C/xampp/htdocs/clients/alpha/nf4/assets/js/script.js",
+		"/C/xampp/htdocs/clients/alpha/nf4/appconfig.php",
+		"/C/Users/ericmasaba/AppData/Local/Temp/fz3temp-1/logout.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/index.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/CreateJSONCustomers.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/book5.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/tables.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/_bookPanelMax.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/home.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/__pageHeader.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/_navigation.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/_index.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/blank.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/buttons.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/flot.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/forms.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/grid.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/icons.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/morris.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/notifications.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/panels-wells.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/pages/typography.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/index.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/bower.json",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/less/sb-admin-2.less",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/less/variables.less",
+		"/C/xampp/htdocs/clients/alpha/nf4/dashboard/less/mixins.less",
+		"/Y/www/_sites/hudsonbrompton/section_book.php",
+		"/C/xampp/htdocs/clients/hudsonbrompton/__config.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/css/bookingSimple.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/book.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/_book.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/css/style.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/.htaccess",
+		"/C/xampp/htdocs/clients/alpha/nf4/booktrip.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/_bookpanel.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/dbconfig.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/Booking.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/assets/css/../../css/booking.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/header.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/newcastle.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/fares.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/error403.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/error404.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/httpResponse.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/nav.php",
+		"/C/Users/ericmasaba/AppData/Roaming/Sublime Text 3/Packages/User/npg.sublime-snippet",
+		"/C/Users/ericmasaba/AppData/Roaming/Sublime Text 3/Packages/User/npa.sublime-snippet",
+		"/C/xampp/htdocs/clients/alpha/nf4/about.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/abt.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/_index.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/footer_container.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/session.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/_signup.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/welcome.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/pack1.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/js/script.js",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/navigation.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/js/initialise.js",
+		"/C/xampp/htdocs/clients/alpha/nf4/Zones.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/pack2.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/pack3.php",
+		"/C/xampp/htdocs/clients/alpha/waproma/section_contact.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/assets/css/common-less.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/home.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/login.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/nav(o).php",
+		"/C/xampp/htdocs/clients/alpha/nf4/_profile.php",
+		"/C/Users/ericmasaba/AppData/Roaming/Sublime Text 3/Packages/User/trips.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/framework.php",
+		"/C/Users/ericmasaba/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/nav2.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/lorem.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/css/navbar.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/end_header.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/inc/desc_tags.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/css/ndrt-rebtel-core.min.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/packages.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/css/rebtel-www.min.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/index.php",
+		"/C/xampp/htdocs/clients/.htaccess",
+		"/C/xampp/htdocs/learn/04/css/base.css",
+		"/C/xampp/htdocs/learn/04/index.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/css/../inc/newcastle.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/css/newcastle.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/home.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/js/responsivegridsystem.js",
+		"/C/xampp/htdocs/clients/alpha/nf4/nav2.html",
+		"/C/xampp/htdocs/learn/10/r18/R18/www.r18.com/my/register/index.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/assets/css/style.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/signup.php",
+		"/C/xampp/htdocs/learn/10/r18/R18/index.html",
+		"/C/xampp/htdocs/clients/alpha/nf4/assets/css/styles.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/error.log",
+		"/C/xampp/htdocs/clients/alpha/nf4/class.user.php",
+		"/C/Users/ericmasaba/OneDrive/Partners/Mamaer Digital/Clients/Neales/Uber/Uber-shared/uberx.sql",
+		"/C/Users/ericmasaba/OneDrive/Partners/Mamaer Digital/Downloads/logins.sql",
+		"/C/Users/ericmasaba/OneDrive/Partners/Mamaer Digital/Clients/Neales/tables01.sql",
+		"/Y/www/neales/nf3/.htaccess",
+		"/C/xampp/htdocs/clients/alpha/nf4/css/responsivegridsystem.css",
+		"/C/xampp/htdocs/clients/alpha/nf4/js/modernizr-2.5.3-min.js",
+		"/Y/www/neales/nf3/dbconfig.php",
+		"/Y/www/neales/nf3/appconfig.php",
+		"/Y/www/neales/nf3/home.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/book.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/sign-up.php",
+		"/Y/www/neales/nf3/class.user.php",
+		"/C/xampp/htdocs/clients/alpha/nf4/responsivegridsystem.html",
+		"/Y/www/neales/.htaccess",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/index.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/class.user.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/profile.php",
+		"/C/xampp/htdocs/clients/alpha/nealesdrt/__config.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/appconfig.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/home.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/session.php",
+		"/C/xampp/htdocs/clients/alpha/nealesdrt/book.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/pdoop/dbconfig.php",
+		"/C/xampp/htdocs/clients/alpha/nf2/register.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"*.js",
+			"",
+			"*.css",
+			"*.php",
+			"*.css",
+			"C:\\xampp\\htdocs\\clients\\alpha\\nf4",
+			"C:\\xampp\\htdocs\\clients\\alpha\\nf2\\pdoop",
+			"<open folders>",
+			"",
+			"y:\\www\\_sites\\51house",
+			"C:\\xampp\\htdocs\\clients\\chenling\\",
+			"Y:\\www\\_sites\\chenling",
+			"Y:\\www\\_sites\\hudsonbrompton\\css",
+			"Y:\\www\\_sites\\",
+			"Y:\\www\\_sites\\hudsonbrompton\\",
+			"Y:\\www\\_sites\\hudsonbrompton\\js",
+			"Y:\\www\\_sites\\hudsonbrompton\\css",
+			"Y:\\www\\_sites\\hudsonbrompton\\js",
+			"Y:\\www\\_sites\\hudsonbrompton",
+			"Y:\\www\\_sites\\gvsdrt\\payment",
+			"payment",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"latlng",
+			"SIGN In",
+			"sessio",
+			"status",
+			"echo",
+			"$error",
+			"$db",
+			"intitialize",
+			"accoutn",
+			"responsive time",
+			"chat",
+			"sb admin v2.0",
+			"timeline",
+			"New Comments",
+			"SB Admin",
+			"dashb",
+			"button-h",
+			"#booking",
+			"easyjet",
+			"easyjet-home",
+			"$home",
+			"home.",
+			"show my",
+			"<?=$root?>booking",
+			"search",
+			"Who's",
+			"map_p",
+			"map",
+			"\"ind",
+			"\"index",
+			"book",
+			"index",
+			"index.php",
+			".btn",
+			"css",
+			"url",
+			"moder",
+			"scales",
+			"gradie",
+			"gradient",
+			"backgr",
+			"background",
+			"url",
+			"pack1",
+			"do it for ",
+			"js/nr",
+			"ndrt",
+			"nrdt",
+			".min.css",
+			"js/",
+			"\"/[j|cs]s",
+			"\"/([j|cs])s",
+			"\"/[j|cs]s",
+			"\"/{j|cs}s",
+			"\"/css",
+			"/css",
+			"\"/images",
+			"max-saver",
+			"url",
+			"ribbon-red",
+			"term saver",
+			"term sa",
+			"tweet",
+			"80",
+			"socialgr",
+			"profilep",
+			"gici",
+			"respons",
+			"nav.php",
+			"nav2",
+			"container",
+			"nealesnarrow",
+			"padding",
+			"passing",
+			"example 5",
+			"#nav",
+			"url('fonts",
+			"url(img",
+			"/images",
+			"fonts",
+			"who's",
+			"wh's using",
+			"modernizr",
+			"bodyba",
+			"img/",
+			"images/",
+			"\"/images",
+			"images",
+			"\"/icons",
+			"icons",
+			"\"/js",
+			"\"/css",
+			"script",
+			"GA",
+			"peres",
+			"localhost",
+			"coding",
+			"lo in to",
+			"users",
+			"bourb",
+			"signin.css",
+			"jquery",
+			"DEFAULT_URL",
+			"1.pdf",
+			"an error",
+			"orig",
+			"or",
+			"fileorigin",
+			"compressed.tracemonkey-pldi-09.pdf",
+			"var kDefaultURL = 'compressed.tracemonkey-pldi-09.pdf';",
+			"fileOrigin",
+			"Origin",
+			"origin",
+			"index",
+			"json",
+			"rnr",
+			"font-awesome",
+			"font",
+			"php inc",
+			"http",
+			"!empty($_POST['password']",
+			"sessionTQP",
+			"tqp",
+			"<section",
+			"</sec",
+			"section",
+			"../includes",
+			"http://"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Neales Admin",
+			"#bookingContainer",
+			"neales",
+			"booktrip",
+			"\"$1s",
+			"\"($1)s",
+			"\"img",
+			"url('../fonts",
+			"url(../img",
+			"img",
+			"\"img",
+			"\"icons",
+			"\"js",
+			"\"css",
+			"logins",
+			"css",
+			"//",
+			"\"js",
+			"js",
+			"prorealfitness",
+			"",
+			"assets/",
+			"assets/css/",
+			"assets/",
+			"assets/js/",
+			"mc-embedded-subscribe",
+			"\"assets/js/",
+			"FIRM_DOMAIN",
+			"",
+			"g\\n",
+			"/~/",
+			"\\n&quot;/~/",
+			"</A><BR>",
+			"assets/img/media/",
+			"media/images",
+			"",
+			"/offer/",
+			"assets/img/media/",
+			"/homepage/",
+			"chenling",
+			"/offer/",
+			"assets/img/media/homepage",
+			"../fonts",
+			"'../assets",
+			"'./assets",
+			"assets",
+			"www.nambuya.co.uk",
+			"https://fonts",
+			"",
+			"'",
+			"name=\"character\"",
+			"checkbox",
+			"",
+			"options",
+			"finish",
+			"description",
+			"options",
+			"source",
+			"items",
+			"name=\"finishOptions\"",
+			"domains",
+			"arbitraryData",
+			"$person",
+			"person",
+			"contactForm",
+			"\\\\\"",
+			"\\\"",
+			"'",
+			"\"finish\"",
+			"\\\"pt$1",
+			"\\\"pt%1",
+			"paymentType",
+			"\",\"",
+			",",
+			"$customerMessage",
+			"$randomDatum",
+			"$randomDatum[",
+			"$randomTuple",
+			"id=\"con-",
+			"",
+			"inc",
+			"<?=$firmName?>",
+			"img",
+			"#wrapper",
+			"#register",
+			"https://www.texxi.com/_sites/gvsdrt/img/",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								830,
+								830
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/mapMake.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6976,
+								6976
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1609.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "book.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4437,
+								4438
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1207.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6559,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										234,
+										240
+									],
+									[
+										541,
+										547
+									],
+									[
+										566,
+										572
+									],
+									[
+										625,
+										631
+									],
+									[
+										650,
+										656
+									],
+									[
+										878,
+										884
+									],
+									[
+										1066,
+										1072
+									],
+									[
+										1350,
+										1356
+									],
+									[
+										1657,
+										1663
+									],
+									[
+										1682,
+										1688
+									],
+									[
+										1898,
+										1904
+									],
+									[
+										2178,
+										2184
+									],
+									[
+										2382,
+										2388
+									],
+									[
+										2636,
+										2642
+									],
+									[
+										2955,
+										2961
+									],
+									[
+										2980,
+										2986
+									],
+									[
+										3199,
+										3205
+									],
+									[
+										3513,
+										3519
+									],
+									[
+										3759,
+										3765
+									],
+									[
+										3947,
+										3953
+									],
+									[
+										4054,
+										4060
+									],
+									[
+										4150,
+										4156
+									],
+									[
+										4398,
+										4404
+									],
+									[
+										4749,
+										4755
+									],
+									[
+										4774,
+										4780
+									],
+									[
+										5024,
+										5030
+									],
+									[
+										5326,
+										5332
+									],
+									[
+										5677,
+										5683
+									],
+									[
+										5702,
+										5708
+									],
+									[
+										5952,
+										5958
+									],
+									[
+										6245,
+										6251
+									],
+									[
+										6475,
+										6481
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								241,
+								261
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/book5listeners.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								901,
+								901
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "NealesDashboard.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
